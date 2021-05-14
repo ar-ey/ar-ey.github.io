@@ -1,0 +1,407 @@
+body {
+  font: 15px/1.5 "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #313030;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+#logo {
+  text-align: center;
+  background: #313030;
+}
+#logo label {
+  color: white;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 75px;
+  border-bottom: 2px solid white;
+}
+header {
+  background: #313030;
+  color: white;
+  padding: 20px;
+  min-height: 20px;
+  text-align: center;
+  border-bottom: 10px solid rgb(221, 43, 43);
+  /* position: sticky;
+  top: 0px; */
+}
+header li {
+  display: inline;
+
+  margin: 0 10px;
+}
+header a {
+  color: white;
+  font-family: "Exo", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+header .current a {
+  background: rgb(221, 43, 43);
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+header .current a:hover {
+  color: white;
+}
+header a:hover {
+  color: rgb(221, 43, 43);
+}
+#highlight {
+  min-height: 400px;
+  background-image: url("../slideshowimg/img1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  animation: slider 25s infinite linear;
+  transition: 3s;
+}
+@keyframes slider {
+  0% {
+    background-image: url(../slideshowimg/img2.jpg);
+  }
+  25% {
+    background-image: url(../slideshowimg/img3.jpg);
+  }
+  50% {
+    background-image: url(../slideshowimg/img4.jpeg);
+  }
+  75% {
+    background-image: url(../slideshowimg/img5.jpg);
+  }
+}
+#highlight h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#highlight p {
+  font-size: 25px;
+}
+#recipes {
+  background: #313030;
+  color: white;
+}
+#recipes h1 {
+  text-align: center;
+}
+#recipes .foods {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  margin-left: 10px;
+}
+#recipes .foods img {
+  width: 230px;
+  height: 150px;
+  border: 10px solid #e29e0b;
+  border-radius: 15px;
+}
+#recipes h3 {
+  font-size: 30px;
+}
+
+#beverages {
+  margin-top: 0px;
+  padding: 0px 50px;
+  background: rgb(221, 43, 43);
+  color: white;
+}
+#beverages h1 {
+  text-align: center;
+}
+#beverages .bevs {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  text-align: center;
+  margin-left: 0px;
+}
+#beverages .bevs img {
+  width: 200px;
+  height: 300px;
+  border: 10px solid #e29e0b;
+  border-radius: 15px;
+}
+#beverages h3 {
+  font-size: 30px;
+}
+
+.foot {
+  margin: 0;
+  /* padding-left: 70px; */
+  box-sizing: border-box;
+  color: white;
+  /* bottom: 0px; */
+  width: 100%;
+  font-family: montserrat;
+  background: #313030;
+}
+.maincontent {
+  display: flex;
+}
+.maincontent .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.maincontentone {
+  text-align: center;
+}
+.center .content {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+.center a {
+  color: white;
+}
+.center a:hover {
+  text-decoration: underline;
+}
+.box h2,
+.boxe h2 {
+  font-size: 1.125rem;
+  border-bottom: 2px solid #d81626;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+}
+.boxe .content {
+  margin: 40px 0 0 0;
+}
+.left .content p {
+  text-align: justify;
+}
+
+.right .content form .inputBox input,
+.right .content form .inputBox textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 90%;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid white;
+  resize: none;
+}
+.right .content form .inputBox {
+  padding-bottom: 30px;
+}
+
+.right .content form .inputBox textarea {
+  height: 110px;
+}
+.right .content form .inputBox span {
+  position: absolute;
+  left: 5%;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  pointer-events: none;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s;
+}
+.right .content form .inputBox input:focus ~ span,
+.right .content form .inputBox textarea:focus ~ span,
+.right .content form .inputBox input:valid ~ span,
+.right .content form .inputBox textarea:valid ~ span {
+  transform: translateY(-24px);
+  font-size: 15px;
+  color: white;
+}
+.right .content form .inputBox input:focus,
+.right .content form .inputBox textarea:focus,
+.right .content form .inputBox input:valid,
+.right .content form .inputBox textarea:valid {
+  border-bottom-color: #26b319;
+}
+.right .content .social {
+  margin: 20px 0 0 0;
+}
+.right .content .social a {
+  padding: 0 2px;
+}
+.right .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #6d6a6a;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.right .content .social a span:hover {
+  background: #d81626;
+}
+
+.btn button {
+  background: #26b319;
+  font-family: montserrat;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 25%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.foot .copy {
+  text-align: center;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+#scrollpath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+
+  background: linear-gradient(to top, #d81626, #424645);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #d81626, #424645);
+  filter: blur(10px);
+}
+
+#progressbar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #d81626, #424645);
+  filter: blur(30px);
+}
+@media (max-width: 905px) {
+  header a {
+    font-size: 14px;
+  }
+  #recipes .p,
+  #beverages .p {
+    padding: 0 150px;
+  }
+
+  footer p {
+    padding: 0 100px;
+    line-height: 1.5;
+  }
+  footer,
+  #recipes .foods,
+  #beverages .bevs,
+  #highlight h1,
+  #highlight p {
+    float: none;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .maincontent {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 730px) {
+  #recipes h1,
+  #beverages h1 {
+    font-size: 20px;
+  }
+  header a {
+    font-size: 12px;
+  }
+
+  #recipes .p,
+  #beverages .p {
+    padding: 0 100px;
+  }
+  footer p {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 685px) {
+  header a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 570px) {
+  header nav,
+  header nav li {
+    display: flex;
+  }
+  #logo label {
+    font-size: 50px;
+  }
+
+  #highlight h1,
+  #highlight p {
+    font-size: 20px;
+  }
+  #recipes .p,
+  #beverages .p {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  #logo label,
+  #ekis {
+    font-size: 40px;
+  }
+  #recipes .p,
+  #beverages .p {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 325px) {
+  #recipes .foods img {
+    width: 200px;
+    height: 120px;
+  }
+  #beverages .bevs img {
+    height: 270px;
+    width: 170px;
+  }
+}

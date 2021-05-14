@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen | Coffees</title>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/coffee.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <section id="logo">
+        <div class="container">
+            <label>Kitchen <span id="ekis">X</span> Coffees</label>
+        </div>
+    </section>
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutus">About us</a></li>
+                <li><a href="index.html#stores">Our Stores</a></li>
+                <li><a href="index.html#stores">Contact us</a></li>
+                <li><a href="index.html#order">Order</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section id="highlightpizza">
+        <div class="container">
+            <h1>Lorem ipsum</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum,
+                ut aliquam fuga inventore, cupiditate aliquid est, ea repellendus
+                ipsam reiciendis accusantium autem perferendis laborum?
+            </p>
+        </div>
+    </section>
+    <section class="recipes">
+        <div class="container">
+            <h1>Coffees</h1>
+            <div class="foods">
+                <a href="#"><img src="./coffeeimg/coffee1.jpg" alt="" /></a>
+                <h3>Cappucino</h3>
+                <p class="price">₱99.00</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+            <div class="foods">
+                <a href="#"><img src="./coffeeimg/coffee2.jpg" alt="" /></a>
+                <h3>Black Coffee</h3>
+                <p class="price">₱89.99</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+            <div class="foods">
+                <a href="#"><img src="./coffeeimg/coffee3.jpg" alt="" /></a>
+                <h3>Iced Coffee</h3>
+                <p class="price">₱120.00</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="recipes one">
+        <div class="container">
+            <h1></h1>
+            <div class="foods">
+                <a href="#"><img src="./coffeeimg/coffee4.jpg" alt="" /></a>
+                <h3>Brewed Coffee</h3>
+                <p class="price">₱99.00</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+            <div class="foods">
+                <a href="#"><img src="./coffeeimg/coffee5.jpg" alt="" /></a>
+                <h3>Cold Brewed Coffee</h3>
+                <p class="price">₱88.00</p>
+                <p class="p"> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+            <div class="foods">
+                <a href="#"><img src="./coffeeimg/coffee6.jpg" alt="" /></a>
+                <h3>Cafe Latte</h3>
+                <p class="price">₱100.00</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>DISCLAIMER: I do not own any of these images. This website is for educational purposes only.</p>
+        <p>by Abraham Reuben Aguas &copy;</p>
+    </footer>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+
+</html>

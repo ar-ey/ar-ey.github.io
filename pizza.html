@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen | Pizzas</title>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/pizza.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>  
+    <section id="logo">
+        <div class="container">
+            <label>Kitchen <span id="ekis">X</span> Pizzas</label>
+        </div>
+    </section>
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutus">About us</a></li>
+                <li><a href="index.html#stores">Our Stores</a></li>
+                <li><a href="index.html#stores">Contact us</a></li>
+                <li><a href="index.html#order">Order</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section id="highlightpizza">
+        <div class="container">
+            <h1>Lorem ipsum</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum,
+                ut aliquam fuga inventore, cupiditate aliquid est, ea repellendus
+                ipsam reiciendis accusantium autem perferendis laborum?
+            </p>
+        </div>
+    </section>
+    <section class="recipes">
+        <div class="container">
+            <h1>Pizza Section</h1>
+            <div class="foods">
+                <a href="#"><img src="./pizzaimg/pizza1.jpg" alt="" /></a>
+                <h3>Hawaiian Pizza</h3>
+                <p class="price">₱2,999.99</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+            <div class="foods">
+                <a href="#"><img src="./pizzaimg/pizza2.jpg" alt="" /></a>
+                <h3>Pepperoni Pizza</h3>
+                <p class="price">₱3,199.99</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+            <div class="foods">
+                <a href="#"><img src="./pizzaimg/pizza3.jpg" alt="" /></a>
+                <h3>Pizza Romana</h3>
+                <p class="price">₱2,799.99</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="recipes one">
+        <div class="container">
+            <h1></h1>
+            <div class="foods">
+                <a href="#"><img src="./pizzaimg/pizza4.jpg" alt="" /></a>
+                <h3>Calzone Pizza</h3>
+                <p class="price">₱1,599.99</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+            <div class="foods">
+                <a href="#"><img src="./pizzaimg/pizza5.jpg" alt="" /></a>
+                <h3>Prosciutto e Funghi Pizza</h3>
+                <p class="price">₱2,799.99</p>
+                <p class="p" >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+            <div class="foods">
+                <a href="#"><img src="./pizzaimg/pizza6.jpg" alt="" /></a>
+                <h3>Pizza Vegetarian</h3>
+                <p class="price">₱2,099.99</p>
+                <p class="p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                    aliquam? Eius doloremque quo, assumenda accusantium eveniet ad sit.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+    <p>DISCLAIMER: I do not own any of these images. This website is for educational purposes only.</p>
+    <p>by Abraham Reuben Aguas &copy;</p>
+    </footer>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+
+</html> 

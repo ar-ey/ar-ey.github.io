@@ -1,0 +1,307 @@
+body {
+  font: 15px/1.5 "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #6d6a6a;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+#logo {
+  text-align: center;
+  background: #313030;
+}
+#logo label {
+  color: white;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 75px;
+  border-bottom: 2px solid white;
+}
+#ekis {
+  color: #d81626;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 90px;
+}
+header {
+  background: #313030;
+  color: white;
+  padding: 20px;
+  min-height: 20px;
+  text-align: center;
+  border-bottom: 10px solid rgb(221, 43, 43);
+  position: sticky;
+  top: 0px;
+}
+header li {
+  display: inline;
+
+  margin: 0 10px;
+}
+header a {
+  color: white;
+  font-family: "Exo", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+header .current a {
+  background: rgb(221, 43, 43);
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+header .current a:hover {
+  color: white;
+}
+header a:hover {
+  color: rgb(221, 43, 43);
+}
+#highlight {
+  min-height: 350px;
+
+  text-align: center;
+  color: white;
+}
+
+#highlightpizza {
+  min-height: 400px;
+  background-image: url("/pastriesimg/pastrybg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+}
+#highlightpizza h1 {
+  float: left;
+  margin-top: 100px;
+  margin-left: 300px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#highlightpizza p {
+  float: left;
+  margin-right: 270px;
+  font-size: 25px;
+}
+.recipes {
+  background: #313030;
+  color: white;
+}
+.recipes h1 {
+  text-align: center;
+}
+.recipes .foods {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  text-align: center;
+  margin-left: 10px;
+}
+.recipes .price {
+  background: #e29e0b;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 20%;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.recipes .price:hover {
+  cursor: pointer;
+}
+
+.recipes .foods img {
+  width: 230px;
+  height: 150px;
+  border: 10px solid #e29e0b;
+  border-radius: 15px;
+}
+.recipes .foods :hover img {
+}
+.recipes h3 {
+  font-size: 30px;
+}
+.one {
+  background: rgb(221, 43, 43);
+  color: white;
+}
+.one h1 {
+  text-align: center;
+}
+.one .foods {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  margin-left: 10px;
+}
+.one .foods img {
+  width: 230px;
+  height: 150px;
+  border: 10px solid #e29e0b;
+  border-radius: 15px;
+}
+.one h3 {
+  font-size: 30px;
+}
+
+footer {
+  line-height: 80px;
+  color: white;
+  background: #313030;
+  text-align: center;
+}
+footer p {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: montserrat;
+}
+footer p .tmark {
+  font-size: 35px;
+  color: white;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+#scrollpath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+
+  background: linear-gradient(to top, #d81626, #424645);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #d81626, #424645);
+  filter: blur(10px);
+}
+
+#progressbar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #d81626, #424645);
+  filter: blur(30px);
+}
+@media (max-width: 905px) {
+  header a {
+    font-size: 14px;
+  }
+  .recipes .p {
+    padding: 0 150px;
+  }
+
+  footer p {
+    padding: 0 100px;
+    line-height: 1.5;
+  }
+  footer,
+  .recipes .foods,
+  #highlightpizza h1,
+  #highlightpizza p {
+    float: none;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .maincontent {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 730px) {
+  .recipes h1 {
+    font-size: 20px;
+  }
+  header a {
+    font-size: 12px;
+  }
+
+  .recipes .p {
+    padding: 0 100px;
+  }
+  footer p {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 685px) {
+  header a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 640px) {
+  header nav,
+  header nav li {
+    display: flex;
+  }
+}
+@media (max-width: 570px) {
+  header nav,
+  header nav li {
+    display: flex;
+  }
+  #logo label {
+    font-size: 50px;
+  }
+
+  #highlight h1,
+  #highlight p {
+    font-size: 20px;
+  }
+  .recipes .p {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  #logo label,
+  #ekis {
+    font-size: 40px;
+  }
+  .recipes .p {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 325px) {
+  #logo label,
+  #ekis {
+    font-size: 30px;
+  }
+  .recipes .foods img {
+    width: 200px;
+    height: 120px;
+  }
+}
